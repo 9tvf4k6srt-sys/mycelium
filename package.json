@@ -1,0 +1,25 @@
+{
+  "name": "mycelium",
+  "version": "0.1.0",
+  "description": "An eval-harness-first agent memory loop. External ground truth is the foundation.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": ["dist", "fixtures"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "demo": "npm run build && node dist/examples/demo.js"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20.14.0",
+    "fast-check": "^3.23.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.9"
+  }
+}
