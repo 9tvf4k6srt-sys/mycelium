@@ -1,0 +1,25 @@
+{
+  "id": "off-by-one-sum",
+  "title": "sumRange misses the last element",
+  "area": "math",
+  "description": "sumRange(1..n) returns the sum of 1..n-1 because the loop bound excludes n.",
+  "signature": "AssertionError: sumRange(4) returned 6, expected 10 at src/sum.cjs:3:5",
+  "candidates": [
+    {
+      "file": "src/sum.cjs",
+      "find": "  total += i;",
+      "replace": "  total += i + 1;"
+    },
+    {
+      "file": "src/sum.cjs",
+      "find": "for (let i = 1; i < n; i++) {",
+      "replace": "for (let i = 0; i <= n - 1; i++) {"
+    },
+    {
+      "file": "src/sum.cjs",
+      "find": "for (let i = 1; i < n; i++) {",
+      "replace": "for (let i = 1; i <= n; i++) {"
+    }
+  ],
+  "checks": [{ "cmd": "node check.cjs" }]
+}
