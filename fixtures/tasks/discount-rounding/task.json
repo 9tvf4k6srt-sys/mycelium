@@ -1,0 +1,25 @@
+{
+  "id": "discount-rounding",
+  "title": "discount is rounded per unit before multiplying",
+  "area": "pricing",
+  "description": "totalWithDiscount rounds the discounted unit price before multiplying by qty, producing 1-cent errors versus rounding the total once.",
+  "signature": "AssertionError: totalWithDiscount(1095, 2, 0.1) returned 1972, expected 1971 in pricing",
+  "candidates": [
+    {
+      "file": "src/price.cjs",
+      "find": "  const roundedUnit = Math.round(discountedUnit);",
+      "replace": "  const roundedUnit = Math.floor(discountedUnit);"
+    },
+    {
+      "file": "src/price.cjs",
+      "find": "  return roundedUnit * qty;",
+      "replace": "  return Math.round(roundedUnit * qty * (1 - discountRate));"
+    },
+    {
+      "file": "src/price.cjs",
+      "find": "  const discountedUnit = unitCents * (1 - discountRate);\n  const roundedUnit = Math.round(discountedUnit);\n  return roundedUnit * qty;",
+      "replace": "  const total = unitCents * qty * (1 - discountRate);\n  return Math.round(total);"
+    }
+  ],
+  "checks": [{ "cmd": "node check.cjs" }]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "sort-comparator",
+  "title": "sort comparator returns a boolean instead of a number",
+  "area": "collections",
+  "description": "sortAscending passes a boolean-returning comparator, so Array#sort never sees a negative value and the order is wrong.",
+  "signature": "AssertionError: sortAscending([3,1,2]) not deepEqual [1,2,3] at check.cjs:7",
+  "candidates": [
+    {
+      "file": "src/sort.cjs",
+      "find": "return [...values].sort((a, b) => a > b);",
+      "replace": "return [...values].sort((a, b) => b - a);"
+    },
+    {
+      "file": "src/sort.cjs",
+      "find": "return [...values].sort((a, b) => a > b);",
+      "replace": "return [...values].sort((a, b) => a - b);"
+    },
+    {
+      "file": "src/sort.cjs",
+      "find": "return [...values].sort((a, b) => a > b);",
+      "replace": "return [...values].sort((a, b) => a < b);"
+    }
+  ],
+  "checks": [{ "cmd": "node check.cjs" }]
+}

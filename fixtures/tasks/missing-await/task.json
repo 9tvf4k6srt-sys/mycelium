@@ -1,0 +1,25 @@
+{
+  "id": "missing-await",
+  "title": "async repo result used without await",
+  "area": "async",
+  "description": "greet forgets to await userRepo.getUser, so it interpolates Promise#name (undefined) instead of the resolved user name.",
+  "signature": "AssertionError: greet(7) resolved to 'hello undefined', expected 'hello ada'",
+  "candidates": [
+    {
+      "file": "src/greet.cjs",
+      "find": "  return `hello ${user.name}`;",
+      "replace": "  return `hello ${String(user.name)}`;"
+    },
+    {
+      "file": "src/greet.cjs",
+      "find": "  const user = userRepo.getUser(id);",
+      "replace": "  const user = await userRepo.getUser(id);"
+    },
+    {
+      "file": "src/greet.cjs",
+      "find": "  const user = userRepo.getUser(id);",
+      "replace": "  const user = userRepo.getUser(id).catch(() => null);"
+    }
+  ],
+  "checks": [{ "cmd": "node check.cjs" }]
+}
