@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ONE-TIME SETUP: move this file to .github/workflows/ci.yml
+#
+# Why it's staged here: GitHub's API refuses to create workflow files without
+# the special `workflow` OAuth scope, so this file could not be pushed to its
+# real location programmatically. In the GitHub web UI it takes 30 seconds:
+#   1. open this file on github.com → copy the content below the line
+#   2. repo → Add file → Create new file → name it `.github/workflows/ci.yml`
+#   3. paste → Commit. CI then runs on every push (Node 20 + 22).
+# Delete this staged copy afterwards.
+# ─────────────────────────────────────────────────────────────────────────────
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - run: npm install
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - name: Demo smoke run (must be deterministic and exit 0)
+        run: node dist/examples/demo.js
