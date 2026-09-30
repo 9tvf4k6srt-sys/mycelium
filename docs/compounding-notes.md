@@ -54,13 +54,13 @@ _None yet. Do not invent High-Impact entries._
 - Observation: Role overlap risk if the parked Researcher is woken for Pre-Ritual work.
 - Evidence: Prior audit recorded Researcher as PARKED / MERGE→DEEP.
 - Micro-action: Route Pre-Ritual only to DEEP Researcher.
-- Consumed-on: standing rule only; no live roster tool in the 2026-09-28 Gauntlet harness to prove a routing change today.
+- Consumed-on: 2026-09-30 | bot_search_agents showed Researcher PARKED; no Pre-Ritual send to that id.
 
 ### Daily Compound | 2026-09-20 | Orchestration | Conf: Med | Source: Critic Chair block cited 2026-09-13; not re-verified this turn
 - Observation: Blind Critic likeness/UI hard-gates exist but were not retrieved with the compounding loop.
-- Evidence: 2026-09-20 audit cited Critic Chair HARD GATE — 2026-09-13. Residual: that gate text was not independently re-read on 2026-09-28 or 2026-09-29 (lean audit; no Critic Chair transcript fetch).
+- Evidence: 2026-09-20 audit cited Critic Chair HARD GATE — 2026-09-13. Residual: gate text not independently re-read on 2026-09-28..09-30 lean audits (no Critic Chair transcript fetch).
 - Micro-action: Next Hybrid/Build audit retrieve Critic Chair tail + this file together.
-- Dead-letter watch: restated 09-20 through 09-29 without independent re-read. One more unconsumed reprint → Dead Letter.
+- Dead Letter as of 2026-09-30 on lean reprints. Keep only as standing rule + Hybrid trigger.
 
 ### Daily Compound | 2026-09-20 | Process | Conf: High | Source: user message this thread
 - Observation: User rejected jargon-only audit output and asked for a real compounding store.
@@ -69,22 +69,29 @@ _None yet. Do not invent High-Impact entries._
 
 ### Daily Compound | 2026-09-28 | Orchestration | Conf: High | Source: github___get_file_contents + local compounding-notes.md + conversation_search + Arbiter Research Foundation PASS
 - Observation: Compounding was a local diary with a stale public twin. Not a cross-session learning system.
-- Evidence: Local file 6870B had 09-20..09-28. GitHub `docs/compounding-notes.md` SHA `9c8d8cb15f86625674b1ddc56d921cdf6388803c` was frozen at 09-20. Claimed path `docs/audits/compounding-notes.md` 404. conversation_search returned May 2026 TWSE/Maple threads, not Daily Compounds. memory.md missing. 09-23..09-28 local lines mostly restated “High-Impact empty / map holds” (maintenance, ADR-0002 activity ≠ execution; same class as 2026-07-05 “silent non-execution wearing a green dashboard”).
-- Micro-action: This file is the one SoT. Header path corrected. Anti-circular + Consumed-on rules added. Do not reprint 09-22..27 circular lines. Next audit must `get_file_contents` this path and report the new SHA; if it cannot, say write/read failed.
-- Consumed-on: 2026-09-29 | opened GitHub first; SHA `e9e16120ee810e44261c7646f78e679c9129201e`; skipped circular 09-22..27 reprints; did not invent High-Impact.
+- Evidence: Local file had 09-20..09-28. GitHub frozen at 09-20 until SoT fix. conversation_search is not the ledger. memory.md missing.
+- Micro-action: This file is the one SoT. Next audit must get_file_contents this path and report SHA.
+- Consumed-on: 2026-09-29 | opened GitHub first; SHA e9e16120; skipped circular reprints; did not invent High-Impact.
 
 ### Daily Compound | 2026-09-29 | Orchestration | Conf: High | Source: github___get_file_contents SHA e9e16120 + local ledger match + anti-circular rule
 - Observation: Measurable reuse now exists: a later audit retrieved the SoT SHA and changed behavior (GitHub-first, no circular reprint, no invented High-Impact).
-- Evidence: Pre-write GitHub SHA `e9e16120ee810e44261c7646f78e679c9129201e` (post-09-28 write). Local working copy matched. memory.md still missing. conversation_search not used as ledger.
-- Micro-action: Keep GitHub-first + SHA report as the only retrieve path. Candidate High-Impact (dual-store / chat-search non-retrieval) remains candidate until Critic/Arbiter PASS — do not auto-promote today.
+- Evidence: Pre-write GitHub SHA e9e16120ee810e44261c7646f78e679c9129201e (post-09-28 write).
+- Micro-action: Keep GitHub-first + SHA report as the only retrieve path. Candidate High-Impact remains candidate until Critic/Arbiter PASS.
+- Consumed-on: 2026-09-30 | GitHub-first get_file_contents; pre-write SHA dca8d18bccd1eae8d0f947fb6bd421992658d2e1; no High-Impact invent; no circular 09-22..27 reprint.
+
+### Daily Compound | 2026-09-30 | Orchestration | Conf: High | Source: github___get_file_contents SHA dca8d18 + bot_search_agents roster
+- Observation: Reuse is now two-audit deep: retrieve-then-differ is the operating loop, not a diary line.
+- Evidence: First tool after skill skim was GitHub get_file_contents (SHA dca8d18). Parked Researcher not used. High-Impact section left empty. 09-20 Critic-gate reprint marked Dead Letter for lean days.
+- Micro-action: Next Hybrid/Build run must fetch Critic Chair hard-gate text as a separate retrieve, not a lean reprint. Do not auto-promote dual-store candidate.
 - Consumed-on: pending later audit.
 
 ## Dead Letters (do not reprint as new compounds)
 
 - 2026-09-22..09-28 local repeats of “High-Impact still empty; do not invent Quality Learning; wait for Critic PASS” — status line, not insight.
-- 2026-09-22 micro-action “create docs/audits/compounding-notes.md” — wrong path; real file was already `docs/compounding-notes.md`. Failed micro-action, now closed by this header fix.
-- 2026-09-22..09-28 reprint of Dual-Mode agent IDs (Lucas→Leader `8b53ce2b…`, Arbiter→Critic Chair `f6947d0b…`, Builder `19665a6d…`, DEEP `4c6bdd8a…`) without re-verification. Standing map lives above; IDs not re-verified in the 2026-09-28/29 Gauntlet harness.
+- 2026-09-22 micro-action “create docs/audits/compounding-notes.md” — wrong path; closed by header fix.
+- 2026-09-22..09-28 reprint of Dual-Mode agent IDs without re-verification.
+- 2026-09-20 Critic Chair hard-gate as a Daily Compound reprint on lean days (standing rule remains; retrieve only on Hybrid/Build).
 
 ## Candidate for later High-Impact elevation
 
-- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. 2026-09-29 consumed the 09-28 SoT rule (GitHub-first + SHA). Elevate only after Critic/Arbiter PASS. Never auto-promote.
+- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. 2026-09-29 and 2026-09-30 consumed the SoT rule (GitHub-first + SHA). Elevate only after Critic/Arbiter PASS. Never auto-promote.
