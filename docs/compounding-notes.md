@@ -41,6 +41,7 @@ _None yet. Do not invent High-Impact entries._
 - ANTI-SILENT-STOP (DEEP): Pre-Ritual must write Foundation to a Leader-named workspace path and update progress.md before exit. Chat-only Pre-Ritual = process FAIL; Resume once.
 - Daily Compound format: `Daily Compound | YYYY-MM-DD | [domain] | Conf: High/Med/Low | Source: …`
 - Quality Learning format: `Quality Learning | Impact: High | Domain: … | insight | evidence | micro-action`
+- “Lucas” in user audit prompts is a constellation label, not a bot to spawn; do not create a Lucas name-twin.
 
 ## Daily Compound
 
@@ -55,12 +56,6 @@ _None yet. Do not invent High-Impact entries._
 - Evidence: Prior audit recorded Researcher as PARKED / MERGE→DEEP.
 - Micro-action: Route Pre-Ritual only to DEEP Researcher.
 - Consumed-on: 2026-09-30 | bot_search_agents showed Researcher PARKED; no Pre-Ritual send to that id.
-
-### Daily Compound | 2026-09-20 | Orchestration | Conf: Med | Source: Critic Chair block cited 2026-09-13; not re-verified this turn
-- Observation: Blind Critic likeness/UI hard-gates exist but were not retrieved with the compounding loop.
-- Evidence: 2026-09-20 audit cited Critic Chair HARD GATE — 2026-09-13. Residual: gate text not independently re-read on 2026-09-28..09-30 lean audits (no Critic Chair transcript fetch).
-- Micro-action: Next Hybrid/Build audit retrieve Critic Chair tail + this file together.
-- Dead Letter as of 2026-09-30 on lean reprints. Keep only as standing rule + Hybrid trigger.
 
 ### Daily Compound | 2026-09-20 | Process | Conf: High | Source: user message this thread
 - Observation: User rejected jargon-only audit output and asked for a real compounding store.
@@ -83,6 +78,12 @@ _None yet. Do not invent High-Impact entries._
 - Observation: Reuse is now two-audit deep: retrieve-then-differ is the operating loop, not a diary line.
 - Evidence: First tool after skill skim was GitHub get_file_contents (SHA dca8d18). Parked Researcher not used. High-Impact section left empty. 09-20 Critic-gate reprint marked Dead Letter for lean days.
 - Micro-action: Next Hybrid/Build run must fetch Critic Chair hard-gate text as a separate retrieve, not a lean reprint. Do not auto-promote dual-store candidate.
+- Consumed-on: 2026-10-01 | GitHub-first get_file_contents SHA 3e28aeb17e576f995d0d8cee9791d72d77f44592; parked Researcher not woken; no High-Impact invent; lean-only output.
+
+### Daily Compound | 2026-10-01 | Orchestration | Conf: High | Source: github___get_file_contents SHA 3e28aeb + bot_search_agents
+- Observation: Three-audit reuse now holds: GitHub-first SoT + parked-Researcher routing + no auto-promote changed this session vs first-cycle diary behavior.
+- Evidence: Pre-write blob SHA 3e28aeb17e576f995d0d8cee9791d72d77f44592. Roster: Researcher PARKED; DEEP/Builder/Critic Chair/Leader idle. Quality Learning section still empty.
+- Micro-action: Next Hybrid/Build only: retrieve Critic Chair 2026-09-13 hard-gate text separately. Do not spawn a Lucas bot. Candidate High-Impact still needs Critic/Arbiter PASS.
 - Consumed-on: pending later audit.
 
 ## Dead Letters (do not reprint as new compounds)
@@ -94,4 +95,4 @@ _None yet. Do not invent High-Impact entries._
 
 ## Candidate for later High-Impact elevation
 
-- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. 2026-09-29 and 2026-09-30 consumed the SoT rule (GitHub-first + SHA). Elevate only after Critic/Arbiter PASS. Never auto-promote.
+- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. 2026-09-29, 2026-09-30, and 2026-10-01 consumed the SoT rule (GitHub-first + SHA). Elevate only after Critic/Arbiter PASS. Never auto-promote.
