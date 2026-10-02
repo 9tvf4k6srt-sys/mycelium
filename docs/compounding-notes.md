@@ -5,7 +5,7 @@ This file is the durable ledger. Chat history is not the ledger.
 
 **Canonical path:** `9tvf4k6srt-sys/mycelium` → `docs/compounding-notes.md`
 **Not the ledger:** `docs/audits/compounding-notes.md` (does not exist; 404).
-**Working copy:** `/home/workdir/.grok/skills/orchestration-self-auditor/references/compounding-notes.md` (must match this file after each write).
+**Working copy:** `/root/.grok/server-skills/orchestration-self-auditor/references/compounding-notes.md` (header path `/home/workdir/.grok/skills/...` 404 as of 2026-10-02; sync this path after each GitHub write).
 **Public:** yes. Do not put secrets, portfolio sizes, or private personal facts here.
 
 ## How to retrieve (mandatory first step of every daily audit)
@@ -36,12 +36,12 @@ _None yet. Do not invent High-Impact entries._
 
 - Parked generic Researcher stays parked. Pre-Ritual / deep research → DEEP Researcher only.
 - Dual-Mode routing only to DEEP / Builder / Critic Chair / Leader. No name-twin bots.
+- “Lucas” in user audit prompts is a constellation label, not a bot to spawn; do not create a Lucas name-twin.
 - Observe/Jot may propose only; it is not a second High-Impact store.
 - Retrieve Critic Chair hard-gates (2026-09-13 likeness / UI) together with this file and the old audit-log.
 - ANTI-SILENT-STOP (DEEP): Pre-Ritual must write Foundation to a Leader-named workspace path and update progress.md before exit. Chat-only Pre-Ritual = process FAIL; Resume once.
 - Daily Compound format: `Daily Compound | YYYY-MM-DD | [domain] | Conf: High/Med/Low | Source: …`
 - Quality Learning format: `Quality Learning | Impact: High | Domain: … | insight | evidence | micro-action`
-- “Lucas” in user audit prompts is a constellation label, not a bot to spawn; do not create a Lucas name-twin.
 
 ## Daily Compound
 
@@ -56,6 +56,12 @@ _None yet. Do not invent High-Impact entries._
 - Evidence: Prior audit recorded Researcher as PARKED / MERGE→DEEP.
 - Micro-action: Route Pre-Ritual only to DEEP Researcher.
 - Consumed-on: 2026-09-30 | bot_search_agents showed Researcher PARKED; no Pre-Ritual send to that id.
+
+### Daily Compound | 2026-09-20 | Orchestration | Conf: Med | Source: Critic Chair block cited 2026-09-13; not re-verified this turn
+- Observation: Blind Critic likeness/UI hard-gates exist but were not retrieved with the compounding loop.
+- Evidence: 2026-09-20 audit cited Critic Chair HARD GATE — 2026-09-13. Residual: gate text not independently re-read on 2026-09-28..09-30 lean audits (no Critic Chair transcript fetch).
+- Micro-action: Next Hybrid/Build audit retrieve Critic Chair tail + this file together.
+- Dead Letter as of 2026-09-30 on lean reprints. Keep only as standing rule + Hybrid trigger.
 
 ### Daily Compound | 2026-09-20 | Process | Conf: High | Source: user message this thread
 - Observation: User rejected jargon-only audit output and asked for a real compounding store.
@@ -84,6 +90,13 @@ _None yet. Do not invent High-Impact entries._
 - Observation: Three-audit reuse now holds: GitHub-first SoT + parked-Researcher routing + no auto-promote changed this session vs first-cycle diary behavior.
 - Evidence: Pre-write blob SHA 3e28aeb17e576f995d0d8cee9791d72d77f44592. Roster: Researcher PARKED; DEEP/Builder/Critic Chair/Leader idle. Quality Learning section still empty.
 - Micro-action: Next Hybrid/Build only: retrieve Critic Chair 2026-09-13 hard-gate text separately. Do not spawn a Lucas bot. Candidate High-Impact still needs Critic/Arbiter PASS.
+- Consumed-on: 2026-10-02 | GitHub get_file_contents blob SHA 23b73e10216d2b55cf0e8f21aad902023ab1f611; Researcher left parked; no Lucas spawn; no High-Impact invent. Critic Chair hard-gate text was visible in bot_search description only (not a separate transcript fetch).
+
+
+### Daily Compound | 2026-10-02 | Skills | Conf: High | Source: ls + github___get_file_contents blob SHA 23b73e10
+- Observation: Header working-copy path does not exist. Audits that follow the header never see the local twin.
+- Evidence: `/home/workdir/.grok/skills/orchestration-self-auditor/references/compounding-notes.md` 404. Readable twin is `/root/.grok/server-skills/orchestration-self-auditor/references/compounding-notes.md`. `/home/workdir/.grok/user_info/memory.md` also missing. GitHub blob 23b73e10 matched the 2026-10-01 text.
+- Micro-action: GitHub remains sole SoT. After each write, sync the server-skills path. Do not claim memory-edit stored a compound.
 - Consumed-on: pending later audit.
 
 ## Dead Letters (do not reprint as new compounds)
@@ -95,4 +108,4 @@ _None yet. Do not invent High-Impact entries._
 
 ## Candidate for later High-Impact elevation
 
-- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. 2026-09-29, 2026-09-30, and 2026-10-01 consumed the SoT rule (GitHub-first + SHA). Elevate only after Critic/Arbiter PASS. Never auto-promote.
+- Dual-store + wrong path + conversation_search non-retrieval made daily notes decorative. SoT rule consumed 2026-09-29, 09-30, 10-01, 10-02. Elevate only after Critic/Arbiter PASS. Never auto-promote.
