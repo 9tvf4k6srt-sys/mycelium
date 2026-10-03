@@ -97,6 +97,13 @@ _None yet. Do not invent High-Impact entries._
 - Observation: Header working-copy path does not exist. Audits that follow the header never see the local twin.
 - Evidence: `/home/workdir/.grok/skills/orchestration-self-auditor/references/compounding-notes.md` 404. Readable twin is `/root/.grok/server-skills/orchestration-self-auditor/references/compounding-notes.md`. `/home/workdir/.grok/user_info/memory.md` also missing. GitHub blob 23b73e10 matched the 2026-10-01 text.
 - Micro-action: GitHub remains sole SoT. After each write, sync the server-skills path. Do not claim memory-edit stored a compound.
+- Consumed-on: 2026-10-03 | GitHub-first get_file_contents blob SHA 15a8f24d28c91855afc92dcb446c7717ac42c063 (commit f0deec24); local twin text matched; no memory.md write claimed; Researcher left parked; no Lucas spawn.
+
+
+### Daily Compound | 2026-10-03 | Orchestration | Conf: High | Source: github___get_file_contents blob SHA 15a8f24 + resource commit f0deec24
+- Observation: A later audit can false-flag SoT drift if it compares yesterday’s blob SHA to today’s commit SHA.
+- Evidence: Pre-write file SHA 15a8f24d28c91855afc92dcb446c7717ac42c063; resource URI commit f0deec246577e9a4e2033ad40b1d04c72aabdaba. Text matched the 10-02 local twin. Header path still not the readable copy.
+- Micro-action: Record blob SHA and commit SHA separately. Drift only if text or blob SHA changes. Do not treat commit SHA mismatch as a failed sync.
 - Consumed-on: pending later audit.
 
 ## Dead Letters (do not reprint as new compounds)
